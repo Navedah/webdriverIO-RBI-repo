@@ -1,6 +1,8 @@
 exports.config = {
-    user: process.env.LT_USERNAME || "YOUR_USERNAME",
-    key: process.env.LT_ACCESS_KEY || "YOUR_ACCESS_KEY",
+    // user: process.env.LT_USERNAME || "YOUR_USERNAME",
+    // key: process.env.LT_ACCESS_KEY || "YOUR_ACCESS_KEY",
+    user: 'naveda',
+    key: 'bWX2BxuTD0YFs7ZxSrTYvZtGhoaICOZTPvcZp029KXt4rLNlds',
   
     updateJob: false,
     specs: ["./../specs/android-test.js"],
@@ -15,10 +17,10 @@ exports.config = {
     capabilities: [
       {
         "lt:options": {
-          deviceName: ".*",
+          deviceName: "Galaxy .*",
           name: "android_ltOptions",
           isRealMobile: true,
-          app: process.env.LT_APP_ID||"lt://proverbial-android",
+          app: "lt://APP1016062841716312698299133",
           platformName: "Android",
           enableCustomTranslation: true,
         }
